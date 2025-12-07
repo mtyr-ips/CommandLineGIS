@@ -1,0 +1,2512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_44865dfc6866dffe1f74de539c9ff569 {
+                    position: relative;
+                    width: 900.0px;
+                    height: 750.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_44865dfc6866dffe1f74de539c9ff569" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_44865dfc6866dffe1f74de539c9ff569 = L.map(
+                "map_44865dfc6866dffe1f74de539c9ff569",
+                {
+                    center: [19.421, -155.287],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a55271ed9076e15761322c8759c15ff2 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a55271ed9076e15761322c8759c15ff2.addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var marker_1375dc644ef69a836c7852c2b28317f9 = L.marker(
+                [19.710470153814992, -155.11464764136596],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_9ab56946b6d8828e6002e6737c32aabe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b959f9a8405693ec89c81316b4551cfd = L.popup({
+  "maxWidth": 460,
+});
+
+        
+            
+                var html_c5fbac49c4af8d720eb908f44f0b7949 = $(`<div id="html_c5fbac49c4af8d720eb908f44f0b7949" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.ebdesilva.org/' target='_blank'>DeSilva Elem School</a><br><b>Address:</b> 278 Ainako Avenue, Hilo<br><b>Type:</b> Elementary</div>`)[0];
+                popup_b959f9a8405693ec89c81316b4551cfd.setContent(html_c5fbac49c4af8d720eb908f44f0b7949);
+            
+        
+
+        marker_1375dc644ef69a836c7852c2b28317f9.bindPopup(popup_b959f9a8405693ec89c81316b4551cfd)
+        ;
+
+        
+    
+    
+            marker_1375dc644ef69a836c7852c2b28317f9.bindTooltip(
+                `<div>
+                     DeSilva Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1375dc644ef69a836c7852c2b28317f9.setIcon(icon_9ab56946b6d8828e6002e6737c32aabe);
+            
+    
+            var marker_8020a157244a8236e2929cda2d123e94 = L.marker(
+                [19.744623894684, -155.09314847881598],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_6254ce7def7b67b26a67f936357d412d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6fd57bf739ab6ed0c03c79e83323d97f = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_2ff63968bf40887893ae8864215e3ccb = $(`<div id="html_2ff63968bf40887893ae8864215e3ccb" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.haaheo.org/' target='_blank'>Haaheo Elem School</a><br><b>Address:</b> 121 Haaheo Road, Hilo<br><b>Type:</b> Elementary</div>`)[0];
+                popup_6fd57bf739ab6ed0c03c79e83323d97f.setContent(html_2ff63968bf40887893ae8864215e3ccb);
+            
+        
+
+        marker_8020a157244a8236e2929cda2d123e94.bindPopup(popup_6fd57bf739ab6ed0c03c79e83323d97f)
+        ;
+
+        
+    
+    
+            marker_8020a157244a8236e2929cda2d123e94.bindTooltip(
+                `<div>
+                     Haaheo Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8020a157244a8236e2929cda2d123e94.setIcon(icon_6254ce7def7b67b26a67f936357d412d);
+            
+    
+            var marker_70e95eb360e1c23abc8477da1094ff72 = L.marker(
+                [19.721295130309, -155.096209717494],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_999442329326d21ed02609de8ba5a1ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54d30b165e6f6dd0b227b68dcfe7a1ac = L.popup({
+  "maxWidth": 540,
+});
+
+        
+            
+                var html_d850193748b34fb4add182adb1165f69 = $(`<div id="html_d850193748b34fb4add182adb1165f69" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.hilohs.k12.hi.us' target='_blank'>Hilo High School</a><br><b>Address:</b> 556 Waianuenue Avenue, Hilo<br><b>Type:</b> High School</div>`)[0];
+                popup_54d30b165e6f6dd0b227b68dcfe7a1ac.setContent(html_d850193748b34fb4add182adb1165f69);
+            
+        
+
+        marker_70e95eb360e1c23abc8477da1094ff72.bindPopup(popup_54d30b165e6f6dd0b227b68dcfe7a1ac)
+        ;
+
+        
+    
+    
+            marker_70e95eb360e1c23abc8477da1094ff72.bindTooltip(
+                `<div>
+                     Hilo High School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70e95eb360e1c23abc8477da1094ff72.setIcon(icon_999442329326d21ed02609de8ba5a1ae);
+            
+    
+            var marker_a5e8b0e3d24b86420c65de8754e04e35 = L.marker(
+                [19.720137840938, -155.095978796061],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_43efab9fd6b78a8702383bd98408b4b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2dbcb4d49228a43e64a30cfee65f6713 = L.popup({
+  "maxWidth": 540,
+});
+
+        
+            
+                var html_79cbdd79887a705127ec718340f62099 = $(`<div id="html_79cbdd79887a705127ec718340f62099" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='https://hilointermediate.k12.hi.us/' target='_blank'>Hilo Inter School</a><br><b>Address:</b> 587 Waianuenue Avenue, Hilo<br><b>Type:</b> Middle / Inter</div>`)[0];
+                popup_2dbcb4d49228a43e64a30cfee65f6713.setContent(html_79cbdd79887a705127ec718340f62099);
+            
+        
+
+        marker_a5e8b0e3d24b86420c65de8754e04e35.bindPopup(popup_2dbcb4d49228a43e64a30cfee65f6713)
+        ;
+
+        
+    
+    
+            marker_a5e8b0e3d24b86420c65de8754e04e35.bindTooltip(
+                `<div>
+                     Hilo Inter School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a5e8b0e3d24b86420c65de8754e04e35.setIcon(icon_43efab9fd6b78a8702383bd98408b4b0);
+            
+    
+            var marker_8af1f0c79b96ee33b16ef781bcd85064 = L.marker(
+                [19.721136434928997, -155.09584245599896],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_dc928d7096223868d03c4700be6a802e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f05b7b6c5f26e7f62859268220cd5d48 = L.popup({
+  "maxWidth": 540,
+});
+
+        
+            
+                var html_11e339cdaeb4b564f313a8fbb5ce00bd = $(`<div id="html_11e339cdaeb4b564f313a8fbb5ce00bd" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='https://www.hilounionschool.org/' target='_blank'>Hilo Union Elem School</a><br><b>Address:</b> 506 Waianuenue Avenue, Hilo<br><b>Type:</b> Elementary</div>`)[0];
+                popup_f05b7b6c5f26e7f62859268220cd5d48.setContent(html_11e339cdaeb4b564f313a8fbb5ce00bd);
+            
+        
+
+        marker_8af1f0c79b96ee33b16ef781bcd85064.bindPopup(popup_f05b7b6c5f26e7f62859268220cd5d48)
+        ;
+
+        
+    
+    
+            marker_8af1f0c79b96ee33b16ef781bcd85064.bindTooltip(
+                `<div>
+                     Hilo Union Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8af1f0c79b96ee33b16ef781bcd85064.setIcon(icon_dc928d7096223868d03c4700be6a802e);
+            
+    
+            var marker_8e0786d17cca1cc5449ab07c4cc6232a = L.marker(
+                [19.616795261212005, -155.94845045169296],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_3037c9d4708af002829035a82ef8dd7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdf0c3aa824729fbd3d8e21f2422afec = L.popup({
+  "maxWidth": 620,
+});
+
+        
+            
+                var html_bcdcac990c32ae39fe347468438d437d = $(`<div id="html_bcdcac990c32ae39fe347468438d437d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='https://holualoaelementary.k12.hi.us' target='_blank'>Holualoa Elem School</a><br><b>Address:</b> 76-5957 Mamalahoa Highway, Holualoa<br><b>Type:</b> Elementary</div>`)[0];
+                popup_fdf0c3aa824729fbd3d8e21f2422afec.setContent(html_bcdcac990c32ae39fe347468438d437d);
+            
+        
+
+        marker_8e0786d17cca1cc5449ab07c4cc6232a.bindPopup(popup_fdf0c3aa824729fbd3d8e21f2422afec)
+        ;
+
+        
+    
+    
+            marker_8e0786d17cca1cc5449ab07c4cc6232a.bindTooltip(
+                `<div>
+                     Holualoa Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e0786d17cca1cc5449ab07c4cc6232a.setIcon(icon_3037c9d4708af002829035a82ef8dd7d);
+            
+    
+            var marker_31dcf2538d4098cd699712cb7c15be43 = L.marker(
+                [19.451805040916, -155.87344021344296],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_ba270975b0de34f5703c25e1b5a4fc18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8f51add5d2ee21662d4da9c9aa8b4ba = L.popup({
+  "maxWidth": 620,
+});
+
+        
+            
+                var html_c58db6079e07e6e6a97c10715a93f6b3 = $(`<div id="html_c58db6079e07e6e6a97c10715a93f6b3" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='https://honaunauelementary.k12.hi.us/' target='_blank'>Honaunau Elem School</a><br><b>Address:</b> 83-5360 Mamalahoa Highway, Captain Cook<br><b>Type:</b> Elementary</div>`)[0];
+                popup_f8f51add5d2ee21662d4da9c9aa8b4ba.setContent(html_c58db6079e07e6e6a97c10715a93f6b3);
+            
+        
+
+        marker_31dcf2538d4098cd699712cb7c15be43.bindPopup(popup_f8f51add5d2ee21662d4da9c9aa8b4ba)
+        ;
+
+        
+    
+    
+            marker_31dcf2538d4098cd699712cb7c15be43.bindTooltip(
+                `<div>
+                     Honaunau Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31dcf2538d4098cd699712cb7c15be43.setIcon(icon_ba270975b0de34f5703c25e1b5a4fc18);
+            
+    
+            var marker_c644a0ca35662d8ce2126d3401cbaa30 = L.marker(
+                [20.074676210095, -155.46457307201996],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_1cae66be903bbd848edf32b8fe0f4301 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74963dbc4f9f7a5b3806eb0c93973e7c = L.popup({
+  "maxWidth": 560,
+});
+
+        
+            
+                var html_6a45c80b9a7c15202d2238d919b60bb8 = $(`<div id="html_6a45c80b9a7c15202d2238d919b60bb8" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.honokaael.k12.hi.us/' target='_blank'>Honokaa Elem School</a><br><b>Address:</b> 45-534 Pakalana Street, Honokaa<br><b>Type:</b> Elementary</div>`)[0];
+                popup_74963dbc4f9f7a5b3806eb0c93973e7c.setContent(html_6a45c80b9a7c15202d2238d919b60bb8);
+            
+        
+
+        marker_c644a0ca35662d8ce2126d3401cbaa30.bindPopup(popup_74963dbc4f9f7a5b3806eb0c93973e7c)
+        ;
+
+        
+    
+    
+            marker_c644a0ca35662d8ce2126d3401cbaa30.bindTooltip(
+                `<div>
+                     Honokaa Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c644a0ca35662d8ce2126d3401cbaa30.setIcon(icon_1cae66be903bbd848edf32b8fe0f4301);
+            
+    
+            var marker_da84b114a1e6a736633991fdc573dd31 = L.marker(
+                [20.075574666296994, -155.463725493971],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_f23cd86deb6bf43fadb5fa667b62dc4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70f013afafd8cc24dc4af85ee03bb1f0 = L.popup({
+  "maxWidth": 560,
+});
+
+        
+            
+                var html_0e98b6841fd9531d517158709bc1d3b2 = $(`<div id="html_0e98b6841fd9531d517158709bc1d3b2" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='https://honokaahighinter.k12.hi.us/' target='_blank'>Honokaa High & Inter School</a><br><b>Address:</b> 45-527 Pakalana Street, Honokaa<br><b>Type:</b> Middle - High</div>`)[0];
+                popup_70f013afafd8cc24dc4af85ee03bb1f0.setContent(html_0e98b6841fd9531d517158709bc1d3b2);
+            
+        
+
+        marker_da84b114a1e6a736633991fdc573dd31.bindPopup(popup_70f013afafd8cc24dc4af85ee03bb1f0)
+        ;
+
+        
+    
+    
+            marker_da84b114a1e6a736633991fdc573dd31.bindTooltip(
+                `<div>
+                     Honokaa High & Inter School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da84b114a1e6a736633991fdc573dd31.setIcon(icon_f23cd86deb6bf43fadb5fa667b62dc4d);
+            
+    
+            var marker_d7e0166dd6e1cefc7763e231d8281357 = L.marker(
+                [19.386905138094995, -155.878580918479],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_28bce8ff0b0f1ba5f467832edfbae6d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc9c06543427c5d1519b59ff517879c6 = L.popup({
+  "maxWidth": 620,
+});
+
+        
+            
+                var html_bc8e7c5a757c131149fffa48145c8272 = $(`<div id="html_bc8e7c5a757c131149fffa48145c8272" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://hookenael.k12.hi.us/' target='_blank'>Hookena Elem School</a><br><b>Address:</b> 86-4355 Mamalahoa Highway, Captain Cook<br><b>Type:</b> Elementary</div>`)[0];
+                popup_bc9c06543427c5d1519b59ff517879c6.setContent(html_bc8e7c5a757c131149fffa48145c8272);
+            
+        
+
+        marker_d7e0166dd6e1cefc7763e231d8281357.bindPopup(popup_bc9c06543427c5d1519b59ff517879c6)
+        ;
+
+        
+    
+    
+            marker_d7e0166dd6e1cefc7763e231d8281357.bindTooltip(
+                `<div>
+                     Hookena Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7e0166dd6e1cefc7763e231d8281357.setIcon(icon_28bce8ff0b0f1ba5f467832edfbae6d9);
+            
+    
+            var marker_d978ad3343dde2ad36edb853947ec420 = L.marker(
+                [19.610784022757, -155.97675259756096],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_d9dfc9f456158c099490e21edd1acc72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6f88a852d8e412eb4dfd0e91dd10404 = L.popup({
+  "maxWidth": 680,
+});
+
+        
+            
+                var html_cd916734f2d18a13f98c8ab5cfcfb667 = $(`<div id="html_cd916734f2d18a13f98c8ab5cfcfb667" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='https://www.kahakaischool.k12.hi.us/' target='_blank'>Kahakai Elem School</a><br><b>Address:</b> 76-147 Royal Poinciana Drive, Kailua-Kona<br><b>Type:</b> Elementary</div>`)[0];
+                popup_f6f88a852d8e412eb4dfd0e91dd10404.setContent(html_cd916734f2d18a13f98c8ab5cfcfb667);
+            
+        
+
+        marker_d978ad3343dde2ad36edb853947ec420.bindPopup(popup_f6f88a852d8e412eb4dfd0e91dd10404)
+        ;
+
+        
+    
+    
+            marker_d978ad3343dde2ad36edb853947ec420.bindTooltip(
+                `<div>
+                     Kahakai Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d978ad3343dde2ad36edb853947ec420.setIcon(icon_d9dfc9f456158c099490e21edd1acc72);
+            
+    
+            var marker_d1b67c0d4298abba1d072694754c715b = L.marker(
+                [19.789901594534, -155.094343905847],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_ae1e2b4cbaec091aeba94c8b8177d93d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daa2c697a03ba8eccf49243c9e51a137 = L.popup({
+  "maxWidth": 680,
+});
+
+        
+            
+                var html_18d30b7ef38bfcef615e484ebe18703e = $(`<div id="html_18d30b7ef38bfcef615e484ebe18703e" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://kalanianaole-school.weebly.com/' target='_blank'>Kalanianaole Elem</a><br><b>Address:</b> 27-330 Old Mamalahoa Highway, Papaikou<br><b>Type:</b> Elementary</div>`)[0];
+                popup_daa2c697a03ba8eccf49243c9e51a137.setContent(html_18d30b7ef38bfcef615e484ebe18703e);
+            
+        
+
+        marker_d1b67c0d4298abba1d072694754c715b.bindPopup(popup_daa2c697a03ba8eccf49243c9e51a137)
+        ;
+
+        
+    
+    
+            marker_d1b67c0d4298abba1d072694754c715b.bindTooltip(
+                `<div>
+                     Kalanianaole Elem
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1b67c0d4298abba1d072694754c715b.setIcon(icon_ae1e2b4cbaec091aeba94c8b8177d93d);
+            
+    
+            var marker_6cccc083d428eac00e7c16ccd634cdd0 = L.marker(
+                [19.713789052197, -155.078611827958],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_a8d0fd3710bea557b83a830c606eed0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2525d27d5a6eaa69e735c293f6c212a5 = L.popup({
+  "maxWidth": 480,
+});
+
+        
+            
+                var html_7280fd1cb841cfa93aed239db5028ded = $(`<div id="html_7280fd1cb841cfa93aed239db5028ded" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://cks.k12.hi.us/' target='_blank'>Kapiolani Elem School</a><br><b>Address:</b> 966 Kilauea Avenue, Hilo<br><b>Type:</b> Elementary</div>`)[0];
+                popup_2525d27d5a6eaa69e735c293f6c212a5.setContent(html_7280fd1cb841cfa93aed239db5028ded);
+            
+        
+
+        marker_6cccc083d428eac00e7c16ccd634cdd0.bindPopup(popup_2525d27d5a6eaa69e735c293f6c212a5)
+        ;
+
+        
+    
+    
+            marker_6cccc083d428eac00e7c16ccd634cdd0.bindTooltip(
+                `<div>
+                     Kapiolani Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6cccc083d428eac00e7c16ccd634cdd0.setIcon(icon_a8d0fd3710bea557b83a830c606eed0c);
+            
+    
+            var marker_d5b4de9b02800441f795cfe31873dd43 = L.marker(
+                [19.202397069522, -155.477978752683],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_6833708d3493dc0a8a92669b163439c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a17982f86ead9083750b45e27f71aeeb = L.popup({
+  "maxWidth": 540,
+});
+
+        
+            
+                var html_d3dac2f95ddf662c363a29d97faf5367 = $(`<div id="html_d3dac2f95ddf662c363a29d97faf5367" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='https://www.khpes.org/' target='_blank'>Kau High & Pahala Elem School</a><br><b>Address:</b> 96-3150 Pikake Street, Pahala<br><b>Type:</b> K - 12</div>`)[0];
+                popup_a17982f86ead9083750b45e27f71aeeb.setContent(html_d3dac2f95ddf662c363a29d97faf5367);
+            
+        
+
+        marker_d5b4de9b02800441f795cfe31873dd43.bindPopup(popup_a17982f86ead9083750b45e27f71aeeb)
+        ;
+
+        
+    
+    
+            marker_d5b4de9b02800441f795cfe31873dd43.bindTooltip(
+                `<div>
+                     Kau High & Pahala Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d5b4de9b02800441f795cfe31873dd43.setIcon(icon_6833708d3493dc0a8a92669b163439c7);
+            
+    
+            var marker_5c2004f26c390757f65597019d5ff7a3 = L.marker(
+                [19.686665297339996, -155.134565557882],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_074f864c451fa7b504d49437e37afc37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8acf689b6dc978b526e4cad546d6de6 = L.popup({
+  "maxWidth": 480,
+});
+
+        
+            
+                var html_5c2a4eab57bde4d90c8d722f3b972884 = $(`<div id="html_5c2a4eab57bde4d90c8d722f3b972884" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='https://www.kaumanaelementary.org' target='_blank'>Kaumana Elem School</a><br><b>Address:</b> 1710 Kaumana Drive, Hilo<br><b>Type:</b> Elementary</div>`)[0];
+                popup_c8acf689b6dc978b526e4cad546d6de6.setContent(html_5c2a4eab57bde4d90c8d722f3b972884);
+            
+        
+
+        marker_5c2004f26c390757f65597019d5ff7a3.bindPopup(popup_c8acf689b6dc978b526e4cad546d6de6)
+        ;
+
+        
+    
+    
+            marker_5c2004f26c390757f65597019d5ff7a3.bindTooltip(
+                `<div>
+                     Kaumana Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5c2004f26c390757f65597019d5ff7a3.setIcon(icon_074f864c451fa7b504d49437e37afc37);
+            
+    
+            var marker_7d28152d31b6bf63552ed63a287ed105 = L.marker(
+                [19.509276146772, -155.917417880109],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_edbeaf9dc94138fed215a222cea69c26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7125ba471c9676229de6d523f13a2bc9 = L.popup({
+  "maxWidth": 700,
+});
+
+        
+            
+                var html_9a6783516f6ab3b6c17255cc5421be00 = $(`<div id="html_9a6783516f6ab3b6c17255cc5421be00" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://ehunui.org/' target='_blank'>Ke Kula O Ehunuikaimalino</a><br><b>Address:</b> 81-1041 Konawaena School Road, Kealakekua<br><b>Type:</b> K - 12</div>`)[0];
+                popup_7125ba471c9676229de6d523f13a2bc9.setContent(html_9a6783516f6ab3b6c17255cc5421be00);
+            
+        
+
+        marker_7d28152d31b6bf63552ed63a287ed105.bindPopup(popup_7125ba471c9676229de6d523f13a2bc9)
+        ;
+
+        
+    
+    
+            marker_7d28152d31b6bf63552ed63a287ed105.bindTooltip(
+                `<div>
+                     Ke Kula O Ehunuikaimalino
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d28152d31b6bf63552ed63a287ed105.setIcon(icon_edbeaf9dc94138fed215a222cea69c26);
+            
+    
+            var marker_0712c2fcbc26c83e7fe62e122bfcf6d8 = L.marker(
+                [19.613167238242003, -155.034849743841],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_8e7acae3dd4d274de8b229f37d21d6c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f126d71038966980aedf1a3066422e25 = L.popup({
+  "maxWidth": 580,
+});
+
+        
+            
+                var html_d34c49cdcee654d3defb08cee74f8341 = $(`<div id="html_d34c49cdcee654d3defb08cee74f8341" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://keaauelementary.org/' target='_blank'>Keaau Elem School</a><br><b>Address:</b> 16-680 Keaau-Pahoa Road, Keaau<br><b>Type:</b> Elementary</div>`)[0];
+                popup_f126d71038966980aedf1a3066422e25.setContent(html_d34c49cdcee654d3defb08cee74f8341);
+            
+        
+
+        marker_0712c2fcbc26c83e7fe62e122bfcf6d8.bindPopup(popup_f126d71038966980aedf1a3066422e25)
+        ;
+
+        
+    
+    
+            marker_0712c2fcbc26c83e7fe62e122bfcf6d8.bindTooltip(
+                `<div>
+                     Keaau Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0712c2fcbc26c83e7fe62e122bfcf6d8.setIcon(icon_8e7acae3dd4d274de8b229f37d21d6c9);
+            
+    
+            var marker_f42de083f129b40ade5fc34e8a46cb63 = L.marker(
+                [19.611900187848, -155.032478754889],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_6a55b4aae703f5cf6cfa8a36ce957558 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f5923ecbcc467565777c384fc700f10 = L.popup({
+  "maxWidth": 580,
+});
+
+        
+            
+                var html_c389c60c33a105fba3ca6bc8c6f2a86b = $(`<div id="html_c389c60c33a105fba3ca6bc8c6f2a86b" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='https://www.keaauhs.com/' target='_blank'>Keaau High School</a><br><b>Address:</b> 16-725 Keaau-Pahoa Road, Keaau<br><b>Type:</b> High School</div>`)[0];
+                popup_4f5923ecbcc467565777c384fc700f10.setContent(html_c389c60c33a105fba3ca6bc8c6f2a86b);
+            
+        
+
+        marker_f42de083f129b40ade5fc34e8a46cb63.bindPopup(popup_4f5923ecbcc467565777c384fc700f10)
+        ;
+
+        
+    
+    
+            marker_f42de083f129b40ade5fc34e8a46cb63.bindTooltip(
+                `<div>
+                     Keaau High School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f42de083f129b40ade5fc34e8a46cb63.setIcon(icon_6a55b4aae703f5cf6cfa8a36ce957558);
+            
+    
+            var marker_c9e4cd924151bee74f8af2c3a28ad9de = L.marker(
+                [19.622181053097, -155.03856242403296],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_99f863472803fce7e13b017ac44d4a28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09094fdfde481537646d4a518cb99c00 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_39823ddc4dfe1e79940f5d750658c629 = $(`<div id="html_39823ddc4dfe1e79940f5d750658c629" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.keaaumiddle.org/' target='_blank'>Keaau Middle School</a><br><b>Address:</b> 16-565  Keaau-Pahoa Road, Keaau<br><b>Type:</b> Middle / Inter</div>`)[0];
+                popup_09094fdfde481537646d4a518cb99c00.setContent(html_39823ddc4dfe1e79940f5d750658c629);
+            
+        
+
+        marker_c9e4cd924151bee74f8af2c3a28ad9de.bindPopup(popup_09094fdfde481537646d4a518cb99c00)
+        ;
+
+        
+    
+    
+            marker_c9e4cd924151bee74f8af2c3a28ad9de.bindTooltip(
+                `<div>
+                     Keaau Middle School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c9e4cd924151bee74f8af2c3a28ad9de.setIcon(icon_99f863472803fce7e13b017ac44d4a28);
+            
+    
+            var marker_327aceb536c7a1e9463507a738e17298 = L.marker(
+                [19.668105835871998, -155.981841774649],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_8c505ed519802190cb5b166f4381fba8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f802d04c823f4468e4beec9461127ec9 = L.popup({
+  "maxWidth": 580,
+});
+
+        
+            
+                var html_ba6624b68417fe82057ecf65e62cd6f6 = $(`<div id="html_ba6624b68417fe82057ecf65e62cd6f6" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://kealakehe.k12.hi.us/' target='_blank'>Kealakehe Elem School</a><br><b>Address:</b> 74-5118 Kealakaa Street, Kailua-Kona<br><b>Type:</b> Elementary</div>`)[0];
+                popup_f802d04c823f4468e4beec9461127ec9.setContent(html_ba6624b68417fe82057ecf65e62cd6f6);
+            
+        
+
+        marker_327aceb536c7a1e9463507a738e17298.bindPopup(popup_f802d04c823f4468e4beec9461127ec9)
+        ;
+
+        
+    
+    
+            marker_327aceb536c7a1e9463507a738e17298.bindTooltip(
+                `<div>
+                     Kealakehe Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_327aceb536c7a1e9463507a738e17298.setIcon(icon_8c505ed519802190cb5b166f4381fba8);
+            
+    
+            var marker_79a1332d57d31194b44d94bfa4b24453 = L.marker(
+                [19.668899224917002, -155.996949903666],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_a773f6390b572519adc704dbd6a18b14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97592d80fff0eaa6c0fc9e5189c611b9 = L.popup({
+  "maxWidth": 640,
+});
+
+        
+            
+                var html_6a05f0bc7f695851f3f3495e89533942 = $(`<div id="html_6a05f0bc7f695851f3f3495e89533942" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.khswaveriders.org/' target='_blank'>Kealakehe High School</a><br><b>Address:</b> 74-5000 Puohulihuli Street, Kailua-Kona<br><b>Type:</b> High School</div>`)[0];
+                popup_97592d80fff0eaa6c0fc9e5189c611b9.setContent(html_6a05f0bc7f695851f3f3495e89533942);
+            
+        
+
+        marker_79a1332d57d31194b44d94bfa4b24453.bindPopup(popup_97592d80fff0eaa6c0fc9e5189c611b9)
+        ;
+
+        
+    
+    
+            marker_79a1332d57d31194b44d94bfa4b24453.bindTooltip(
+                `<div>
+                     Kealakehe High School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79a1332d57d31194b44d94bfa4b24453.setIcon(icon_a773f6390b572519adc704dbd6a18b14);
+            
+    
+            var marker_5c3614c40c6342f2bffbfaaf60c04b98 = L.marker(
+                [19.668062962436995, -155.983020354054],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_693290f5333789dad2e556d19c204b26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56abb1647f96f0e892b8e2abd43249db = L.popup({
+  "maxWidth": 540,
+});
+
+        
+            
+                var html_f778f476d39b7708630b8261c91f304c = $(`<div id="html_f778f476d39b7708630b8261c91f304c" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.kishawks.org/' target='_blank'>Kealakehe Inter School</a><br><b>Address:</b> 74-5062 Onipaa Street, Kailua-Kona<br><b>Type:</b> Middle / Inter</div>`)[0];
+                popup_56abb1647f96f0e892b8e2abd43249db.setContent(html_f778f476d39b7708630b8261c91f304c);
+            
+        
+
+        marker_5c3614c40c6342f2bffbfaaf60c04b98.bindPopup(popup_56abb1647f96f0e892b8e2abd43249db)
+        ;
+
+        
+    
+    
+            marker_5c3614c40c6342f2bffbfaaf60c04b98.bindTooltip(
+                `<div>
+                     Kealakehe Inter School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5c3614c40c6342f2bffbfaaf60c04b98.setIcon(icon_693290f5333789dad2e556d19c204b26);
+            
+    
+            var marker_837cbdac563d2ab13fd6d955afc28d9a = L.marker(
+                [19.728276291736, -155.044684482294],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_c1d3b12560a2853e55e3a7693412df33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78e027c0afe8d4445d2d59f71a2b40e0 = L.popup({
+  "maxWidth": 440,
+});
+
+        
+            
+                var html_ad8dcfc249f7fb53d895dd920808616e = $(`<div id="html_ad8dcfc249f7fb53d895dd920808616e" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.keaukahaelementary.com/' target='_blank'>Keaukaha Elem School</a><br><b>Address:</b> 240 Desha Avenue, Hilo<br><b>Type:</b> Elementary</div>`)[0];
+                popup_78e027c0afe8d4445d2d59f71a2b40e0.setContent(html_ad8dcfc249f7fb53d895dd920808616e);
+            
+        
+
+        marker_837cbdac563d2ab13fd6d955afc28d9a.bindPopup(popup_78e027c0afe8d4445d2d59f71a2b40e0)
+        ;
+
+        
+    
+    
+            marker_837cbdac563d2ab13fd6d955afc28d9a.bindTooltip(
+                `<div>
+                     Keaukaha Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_837cbdac563d2ab13fd6d955afc28d9a.setIcon(icon_c1d3b12560a2853e55e3a7693412df33);
+            
+    
+            var marker_5f6cf173f0bfc6a3e2397e868931a3d8 = L.marker(
+                [19.525656900148, -154.92623620430297],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_5ea1703a2889ac1dbb49403d1073c6e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e65b23b1847314b676071d0fbabd6b0 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_3e5afb37f80e111922daf3a2197adb0e = $(`<div id="html_3e5afb37f80e111922daf3a2197adb0e" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.keonepoko.k12.hi.us' target='_blank'>Keonepoko Elem School</a><br><b>Address:</b> 15-890 Kahakai Boulevard, Pahoa<br><b>Type:</b> Elementary</div>`)[0];
+                popup_6e65b23b1847314b676071d0fbabd6b0.setContent(html_3e5afb37f80e111922daf3a2197adb0e);
+            
+        
+
+        marker_5f6cf173f0bfc6a3e2397e868931a3d8.bindPopup(popup_6e65b23b1847314b676071d0fbabd6b0)
+        ;
+
+        
+    
+    
+            marker_5f6cf173f0bfc6a3e2397e868931a3d8.bindTooltip(
+                `<div>
+                     Keonepoko Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5f6cf173f0bfc6a3e2397e868931a3d8.setIcon(icon_5ea1703a2889ac1dbb49403d1073c6e1);
+            
+    
+            var marker_3ad5641440d3027cfb1ef71bcbec2051 = L.marker(
+                [20.237656911013996, -155.817738862623],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_a3b2c21bfdbd2a02603c4e8519f09c24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f0fc56b1bc67dca7df67be1175146ad = L.popup({
+  "maxWidth": 640,
+});
+
+        
+            
+                var html_39aaa495c4d98f4e6e3088a850bda6c7 = $(`<div id="html_39aaa495c4d98f4e6e3088a850bda6c7" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='https://kohalaelementary.com/' target='_blank'>Kohala Elem School</a><br><b>Address:</b> 54-3609 Akoni Pule Highway, Kapaau<br><b>Type:</b> Elementary</div>`)[0];
+                popup_9f0fc56b1bc67dca7df67be1175146ad.setContent(html_39aaa495c4d98f4e6e3088a850bda6c7);
+            
+        
+
+        marker_3ad5641440d3027cfb1ef71bcbec2051.bindPopup(popup_9f0fc56b1bc67dca7df67be1175146ad)
+        ;
+
+        
+    
+    
+            marker_3ad5641440d3027cfb1ef71bcbec2051.bindTooltip(
+                `<div>
+                     Kohala Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ad5641440d3027cfb1ef71bcbec2051.setIcon(icon_a3b2c21bfdbd2a02603c4e8519f09c24);
+            
+    
+            var marker_76714f5570ecd681041e5f2524bafd87 = L.marker(
+                [20.237267864978996, -155.817784711634],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_3fae94c79dbdd7c7b732462d08e80a10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03ce463cbe19ecd69b039dcac3dff360 = L.popup({
+  "maxWidth": 640,
+});
+
+        
+            
+                var html_030f84a9cd62283e714af536f1d860a5 = $(`<div id="html_030f84a9cd62283e714af536f1d860a5" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.kohalahs.org/' target='_blank'>Kohala High School</a><br><b>Address:</b> 54-3611 Akoni Pule Highway, Kapaau<br><b>Type:</b> High School</div>`)[0];
+                popup_03ce463cbe19ecd69b039dcac3dff360.setContent(html_030f84a9cd62283e714af536f1d860a5);
+            
+        
+
+        marker_76714f5570ecd681041e5f2524bafd87.bindPopup(popup_03ce463cbe19ecd69b039dcac3dff360)
+        ;
+
+        
+    
+    
+            marker_76714f5570ecd681041e5f2524bafd87.bindTooltip(
+                `<div>
+                     Kohala High School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_76714f5570ecd681041e5f2524bafd87.setIcon(icon_3fae94c79dbdd7c7b732462d08e80a10);
+            
+    
+            var marker_43463d692d02d06146e7d5c2f2dc00f8 = L.marker(
+                [20.227276720211993, -155.778429245473],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_9b41404e35d9859ab73c57192fcb1bbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98ff8e76584e3a66758ee852435607e8 = L.popup({
+  "maxWidth": 640,
+});
+
+        
+            
+                var html_9cd6664da97b9d2be420dbcb8f387cff = $(`<div id="html_9cd6664da97b9d2be420dbcb8f387cff" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.kohalams.org/' target='_blank'>Kohala Middle School</a><br><b>Address:</b> 53-4155 Akoni Pule Highway, Kapaau<br><b>Type:</b> Middle / Inter</div>`)[0];
+                popup_98ff8e76584e3a66758ee852435607e8.setContent(html_9cd6664da97b9d2be420dbcb8f387cff);
+            
+        
+
+        marker_43463d692d02d06146e7d5c2f2dc00f8.bindPopup(popup_98ff8e76584e3a66758ee852435607e8)
+        ;
+
+        
+    
+    
+            marker_43463d692d02d06146e7d5c2f2dc00f8.bindTooltip(
+                `<div>
+                     Kohala Middle School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43463d692d02d06146e7d5c2f2dc00f8.setIcon(icon_9b41404e35d9859ab73c57192fcb1bbe);
+            
+    
+            var marker_62e8b2f0ee3cdca6b310999b7c764d18 = L.marker(
+                [19.504834157183996, -155.924586921895],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_31508ccebfe691399ceb81541e5192c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d56a4de63a8f2d76c4017fa8b37a22d1 = L.popup({
+  "maxWidth": 480,
+});
+
+        
+            
+                var html_2725542012993bf2f703a0ff63099e32 = $(`<div id="html_2725542012993bf2f703a0ff63099e32" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.konawaenael.k12.hi.us/' target='_blank'>Konawaena Elem School</a><br><b>Address:</b> 81-901 Onouli Road, Kealakekua<br><b>Type:</b> Elementary</div>`)[0];
+                popup_d56a4de63a8f2d76c4017fa8b37a22d1.setContent(html_2725542012993bf2f703a0ff63099e32);
+            
+        
+
+        marker_62e8b2f0ee3cdca6b310999b7c764d18.bindPopup(popup_d56a4de63a8f2d76c4017fa8b37a22d1)
+        ;
+
+        
+    
+    
+            marker_62e8b2f0ee3cdca6b310999b7c764d18.bindTooltip(
+                `<div>
+                     Konawaena Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_62e8b2f0ee3cdca6b310999b7c764d18.setIcon(icon_31508ccebfe691399ceb81541e5192c4);
+            
+    
+            var marker_d7b812dda26f870389f9d6d435ee59cd = L.marker(
+                [19.51157123759, -155.915061140393],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_ca7166c11d1761b31d19ac2892adfe63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39349af1f960cec4ec241787dfd9de8e = L.popup({
+  "maxWidth": 700,
+});
+
+        
+            
+                var html_29040b97541dc961f262d764a49adb50 = $(`<div id="html_29040b97541dc961f262d764a49adb50" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.konawaenahs.org/' target='_blank'>Konawaena High School</a><br><b>Address:</b> 81-1043 Konawaena School Road, Kealakekua<br><b>Type:</b> High School</div>`)[0];
+                popup_39349af1f960cec4ec241787dfd9de8e.setContent(html_29040b97541dc961f262d764a49adb50);
+            
+        
+
+        marker_d7b812dda26f870389f9d6d435ee59cd.bindPopup(popup_39349af1f960cec4ec241787dfd9de8e)
+        ;
+
+        
+    
+    
+            marker_d7b812dda26f870389f9d6d435ee59cd.bindTooltip(
+                `<div>
+                     Konawaena High School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7b812dda26f870389f9d6d435ee59cd.setIcon(icon_ca7166c11d1761b31d19ac2892adfe63);
+            
+    
+            var marker_c91f53f05bd2d18303c5d68cac773fda = L.marker(
+                [19.510155073138996, -155.915927829182],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_fbac842a4e9896c13ca4392f13dbd1a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af6a678d9953190c3f98f7382e01f00b = L.popup({
+  "maxWidth": 700,
+});
+
+        
+            
+                var html_e529b00af3e3107be88c2efd03e38a40 = $(`<div id="html_e529b00af3e3107be88c2efd03e38a40" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://konawaenamiddle.k12.hi.us/' target='_blank'>Konawaena Middle School</a><br><b>Address:</b> 81-1045 Konawaena School Road, Kealakekua<br><b>Type:</b> Middle / Inter</div>`)[0];
+                popup_af6a678d9953190c3f98f7382e01f00b.setContent(html_e529b00af3e3107be88c2efd03e38a40);
+            
+        
+
+        marker_c91f53f05bd2d18303c5d68cac773fda.bindPopup(popup_af6a678d9953190c3f98f7382e01f00b)
+        ;
+
+        
+    
+    
+            marker_c91f53f05bd2d18303c5d68cac773fda.bindTooltip(
+                `<div>
+                     Konawaena Middle School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c91f53f05bd2d18303c5d68cac773fda.setIcon(icon_fbac842a4e9896c13ca4392f13dbd1a2);
+            
+    
+            var marker_7f3f574d331ae3817ee0bf3518e061f9 = L.marker(
+                [19.554541692861996, -155.102355161264],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_38e5c49561c323dbab01d578af1f6b0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8eb1982e965f536425a9ad8544dc6999 = L.popup({
+  "maxWidth": 580,
+});
+
+        
+            
+                var html_20020a4f3129f9667c31e5b1c049cc1d = $(`<div id="html_20020a4f3129f9667c31e5b1c049cc1d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.mveshawks.k12.hi.us/' target='_blank'>Mountain View Elem School</a><br><b>Address:</b> 18-1235 Volcano Highway, Mountain View<br><b>Type:</b> Elementary</div>`)[0];
+                popup_8eb1982e965f536425a9ad8544dc6999.setContent(html_20020a4f3129f9667c31e5b1c049cc1d);
+            
+        
+
+        marker_7f3f574d331ae3817ee0bf3518e061f9.bindPopup(popup_8eb1982e965f536425a9ad8544dc6999)
+        ;
+
+        
+    
+    
+            marker_7f3f574d331ae3817ee0bf3518e061f9.bindTooltip(
+                `<div>
+                     Mountain View Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7f3f574d331ae3817ee0bf3518e061f9.setIcon(icon_38e5c49561c323dbab01d578af1f6b0e);
+            
+    
+            var marker_c9cac41077f981c6f1536c824f5b5840 = L.marker(
+                [19.061215519467996, -155.57970563675298],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_7d5735df832dc34a02ae1aded37f801e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_506a6cb23db2193777e418771ca8ef35 = L.popup({
+  "maxWidth": 620,
+});
+
+        
+            
+                var html_658e117825d01ed1051a0567918c86c5 = $(`<div id="html_658e117825d01ed1051a0567918c86c5" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Naalehu Elem School<br><b>Address:</b> 95-5545 Mamalahoa Highway, Naalehu<br><b>Type:</b> Elementary</div>`)[0];
+                popup_506a6cb23db2193777e418771ca8ef35.setContent(html_658e117825d01ed1051a0567918c86c5);
+            
+        
+
+        marker_c9cac41077f981c6f1536c824f5b5840.bindPopup(popup_506a6cb23db2193777e418771ca8ef35)
+        ;
+
+        
+    
+    
+            marker_c9cac41077f981c6f1536c824f5b5840.bindTooltip(
+                `<div>
+                     Naalehu Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c9cac41077f981c6f1536c824f5b5840.setIcon(icon_7d5735df832dc34a02ae1aded37f801e);
+            
+    
+            var marker_fb9a1444b72cdafe3767d35e63bb6139 = L.marker(
+                [20.039269, -155.368277],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_4ddaa2ed42c84fefa2760f3cc4b10022 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_972ba1c8716149dcb78fd53cd2b4d7ef = L.popup({
+  "maxWidth": 540,
+});
+
+        
+            
+                var html_bc0e5bdf673f9a10735068bd166f7a10 = $(`<div id="html_bc0e5bdf673f9a10735068bd166f7a10" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.paauiloschool.org/' target='_blank'>Paauilo Elem & Inter School</a><br><b>Address:</b> 43-1497 Old Main Road, Paauilo<br><b>Type:</b> Elem - Middle</div>`)[0];
+                popup_972ba1c8716149dcb78fd53cd2b4d7ef.setContent(html_bc0e5bdf673f9a10735068bd166f7a10);
+            
+        
+
+        marker_fb9a1444b72cdafe3767d35e63bb6139.bindPopup(popup_972ba1c8716149dcb78fd53cd2b4d7ef)
+        ;
+
+        
+    
+    
+            marker_fb9a1444b72cdafe3767d35e63bb6139.bindTooltip(
+                `<div>
+                     Paauilo Elem & Inter School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb9a1444b72cdafe3767d35e63bb6139.setIcon(icon_4ddaa2ed42c84fefa2760f3cc4b10022);
+            
+    
+            var marker_8347386aea8268aeafaf6ea9b623cb08 = L.marker(
+                [19.492441219972996, -154.943006213262],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_81fd4a83fb899b3bd131c9d7d53b24e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f1e66718bf38ed1416e899956ecafd1 = L.popup({
+  "maxWidth": 640,
+});
+
+        
+            
+                var html_5c40f087dee9b9683da20288fc5aac06 = $(`<div id="html_5c40f087dee9b9683da20288fc5aac06" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Pahoa Elem School<br><b>Address:</b> 15-3030 Pahoa Village Road, Pahoa<br><b>Type:</b> Elementary</div>`)[0];
+                popup_7f1e66718bf38ed1416e899956ecafd1.setContent(html_5c40f087dee9b9683da20288fc5aac06);
+            
+        
+
+        marker_8347386aea8268aeafaf6ea9b623cb08.bindPopup(popup_7f1e66718bf38ed1416e899956ecafd1)
+        ;
+
+        
+    
+    
+            marker_8347386aea8268aeafaf6ea9b623cb08.bindTooltip(
+                `<div>
+                     Pahoa Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8347386aea8268aeafaf6ea9b623cb08.setIcon(icon_81fd4a83fb899b3bd131c9d7d53b24e6);
+            
+    
+            var marker_e771a0745dbc1ce0a633130450a1e4c3 = L.marker(
+                [19.512629214385, -154.905102985065],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_59eeecfa5a057b3af1c49fa868622894 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1152fe2f2065ae8b7c757f3fd984175 = L.popup({
+  "maxWidth": 460,
+});
+
+        
+            
+                var html_74f30b079da91dc8d03948a01273db61 = $(`<div id="html_74f30b079da91dc8d03948a01273db61" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://pahoahis.org/' target='_blank'>Pahoa High & Inter School</a><br><b>Address:</b> 15-3038 Puna Road, Pahoa<br><b>Type:</b> Middle - High</div>`)[0];
+                popup_a1152fe2f2065ae8b7c757f3fd984175.setContent(html_74f30b079da91dc8d03948a01273db61);
+            
+        
+
+        marker_e771a0745dbc1ce0a633130450a1e4c3.bindPopup(popup_a1152fe2f2065ae8b7c757f3fd984175)
+        ;
+
+        
+    
+    
+            marker_e771a0745dbc1ce0a633130450a1e4c3.bindTooltip(
+                `<div>
+                     Pahoa High & Inter School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e771a0745dbc1ce0a633130450a1e4c3.setIcon(icon_59eeecfa5a057b3af1c49fa868622894);
+            
+    
+            var marker_0a5502b82c7b5c7e7f2de8e79197d897 = L.marker(
+                [19.695028844146997, -155.076080660837],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_db1c908a6ee57b1da7e4065f3db789fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cffa4b64f537ff15da10d8c7c18cc4f2 = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_9632e9d502552f395aa360ccba4182ef = $(`<div id="html_9632e9d502552f395aa360ccba4182ef" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.waiakeaelementary.org/' target='_blank'>Waiakea Elem School</a><br><b>Address:</b> 180 West Puainako Street, Hilo<br><b>Type:</b> Elementary</div>`)[0];
+                popup_cffa4b64f537ff15da10d8c7c18cc4f2.setContent(html_9632e9d502552f395aa360ccba4182ef);
+            
+        
+
+        marker_0a5502b82c7b5c7e7f2de8e79197d897.bindPopup(popup_cffa4b64f537ff15da10d8c7c18cc4f2)
+        ;
+
+        
+    
+    
+            marker_0a5502b82c7b5c7e7f2de8e79197d897.bindTooltip(
+                `<div>
+                     Waiakea Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0a5502b82c7b5c7e7f2de8e79197d897.setIcon(icon_db1c908a6ee57b1da7e4065f3db789fc);
+            
+    
+            var marker_638eb38ce78595245a9348d68117f3fc = L.marker(
+                [19.696203442148995, -155.074340493919],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_c69ca231e869d571cb1459cc5b78e53b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a86804f6fa0d0c88ab2d47b6bcb0b82 = L.popup({
+  "maxWidth": 520,
+});
+
+        
+            
+                var html_ae33ef864c8ec36fd78e6f0afba5d113 = $(`<div id="html_ae33ef864c8ec36fd78e6f0afba5d113" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://waiakeahigh.k12.hi.us/' target='_blank'>Waiakea High School</a><br><b>Address:</b> 155 W. Kawili Street, Hilo<br><b>Type:</b> High School</div>`)[0];
+                popup_5a86804f6fa0d0c88ab2d47b6bcb0b82.setContent(html_ae33ef864c8ec36fd78e6f0afba5d113);
+            
+        
+
+        marker_638eb38ce78595245a9348d68117f3fc.bindPopup(popup_5a86804f6fa0d0c88ab2d47b6bcb0b82)
+        ;
+
+        
+    
+    
+            marker_638eb38ce78595245a9348d68117f3fc.bindTooltip(
+                `<div>
+                     Waiakea High School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_638eb38ce78595245a9348d68117f3fc.setIcon(icon_c69ca231e869d571cb1459cc5b78e53b);
+            
+    
+            var marker_a9b02a7c7ac71cddf84ab83966d58b92 = L.marker(
+                [19.695037812783998, -155.07762226046898],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_ec0cef047fbc0e1ac07cc0d86e52565c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_642b2ea1dc6d0235ff5188fe188b049e = L.popup({
+  "maxWidth": 600,
+});
+
+        
+            
+                var html_87322421e82269fb16219879df64ac84 = $(`<div id="html_87322421e82269fb16219879df64ac84" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.waiakeatitans.org/' target='_blank'>Waiakea Inter School</a><br><b>Address:</b> 200 West Puainako Street, Hilo<br><b>Type:</b> Middle / Inter</div>`)[0];
+                popup_642b2ea1dc6d0235ff5188fe188b049e.setContent(html_87322421e82269fb16219879df64ac84);
+            
+        
+
+        marker_a9b02a7c7ac71cddf84ab83966d58b92.bindPopup(popup_642b2ea1dc6d0235ff5188fe188b049e)
+        ;
+
+        
+    
+    
+            marker_a9b02a7c7ac71cddf84ab83966d58b92.bindTooltip(
+                `<div>
+                     Waiakea Inter School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a9b02a7c7ac71cddf84ab83966d58b92.setIcon(icon_ec0cef047fbc0e1ac07cc0d86e52565c);
+            
+    
+            var marker_d5bfb9a040d30df9c7320d98b4d4a0cb = L.marker(
+                [19.683419866339992, -155.06818557859802],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_f0a3da7f58d606f7169bedac3037e151 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a5f3af8275b6c3875b424abd45be096 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_52b4b391ed64727ef95e60b9f95c8294 = $(`<div id="html_52b4b391ed64727ef95e60b9f95c8294" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.waiakeawaena-elementary.com/' target='_blank'>Waiakeawaena Elem School</a><br><b>Address:</b> 2420 Kilauea Avenue, Hilo<br><b>Type:</b> Elementary</div>`)[0];
+                popup_7a5f3af8275b6c3875b424abd45be096.setContent(html_52b4b391ed64727ef95e60b9f95c8294);
+            
+        
+
+        marker_d5bfb9a040d30df9c7320d98b4d4a0cb.bindPopup(popup_7a5f3af8275b6c3875b424abd45be096)
+        ;
+
+        
+    
+    
+            marker_d5bfb9a040d30df9c7320d98b4d4a0cb.bindTooltip(
+                `<div>
+                     Waiakeawaena Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d5bfb9a040d30df9c7320d98b4d4a0cb.setIcon(icon_f0a3da7f58d606f7169bedac3037e151);
+            
+    
+            var marker_a60fe2451e181b43c89dcda33414d6ce = L.marker(
+                [19.945797030788995, -155.790594488285],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_3bf9291e3d762cd8921ec444d76c7ef9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_826a803bf26f16468c25800b3fa8b831 = L.popup({
+  "maxWidth": 520,
+});
+
+        
+            
+                var html_a5f63af4a80d0b0587ac5ae3b679c4b6 = $(`<div id="html_a5f63af4a80d0b0587ac5ae3b679c4b6" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='http://www.waikoloaschool.org/' target='_blank'>Waikoloa School</a><br><b>Address:</b> 68-1730 Hooko Street, Waikoloa<br><b>Type:</b> Elem - Middle</div>`)[0];
+                popup_826a803bf26f16468c25800b3fa8b831.setContent(html_a5f63af4a80d0b0587ac5ae3b679c4b6);
+            
+        
+
+        marker_a60fe2451e181b43c89dcda33414d6ce.bindPopup(popup_826a803bf26f16468c25800b3fa8b831)
+        ;
+
+        
+    
+    
+            marker_a60fe2451e181b43c89dcda33414d6ce.bindTooltip(
+                `<div>
+                     Waikoloa School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a60fe2451e181b43c89dcda33414d6ce.setIcon(icon_3bf9291e3d762cd8921ec444d76c7ef9);
+            
+    
+            var marker_9413704c4a1c591989d9e1cd0d3e3455 = L.marker(
+                [20.019165212297, -155.669903967376],
+                {
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var icon_2547fb57b457ba80262da2a82a4fede4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc8d7aa8c83adc41c743c50d7d02046b = L.popup({
+  "maxWidth": 620,
+});
+
+        
+            
+                var html_32d102b4fa0e96cc55c870ee1b6dd138 = $(`<div id="html_32d102b4fa0e96cc55c870ee1b6dd138" style="width: 100.0%; height: 100.0%;"><b>Name:</b> <a href='https://waimeael.k12.hi.us/' target='_blank'>Waimea Elem School</a><br><b>Address:</b> 67-1225 Mamalahoa Highway, Kamuela<br><b>Type:</b> Elementary</div>`)[0];
+                popup_cc8d7aa8c83adc41c743c50d7d02046b.setContent(html_32d102b4fa0e96cc55c870ee1b6dd138);
+            
+        
+
+        marker_9413704c4a1c591989d9e1cd0d3e3455.bindPopup(popup_cc8d7aa8c83adc41c743c50d7d02046b)
+        ;
+
+        
+    
+    
+            marker_9413704c4a1c591989d9e1cd0d3e3455.bindTooltip(
+                `<div>
+                     Waimea Elem School
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9413704c4a1c591989d9e1cd0d3e3455.setIcon(icon_2547fb57b457ba80262da2a82a4fede4);
+            
+    
+            tile_layer_a55271ed9076e15761322c8759c15ff2.addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+                marker_1375dc644ef69a836c7852c2b28317f9.setIcon(icon_9ab56946b6d8828e6002e6737c32aabe);
+            
+    
+                marker_8020a157244a8236e2929cda2d123e94.setIcon(icon_6254ce7def7b67b26a67f936357d412d);
+            
+    
+                marker_70e95eb360e1c23abc8477da1094ff72.setIcon(icon_999442329326d21ed02609de8ba5a1ae);
+            
+    
+                marker_a5e8b0e3d24b86420c65de8754e04e35.setIcon(icon_43efab9fd6b78a8702383bd98408b4b0);
+            
+    
+                marker_8af1f0c79b96ee33b16ef781bcd85064.setIcon(icon_dc928d7096223868d03c4700be6a802e);
+            
+    
+                marker_8e0786d17cca1cc5449ab07c4cc6232a.setIcon(icon_3037c9d4708af002829035a82ef8dd7d);
+            
+    
+                marker_31dcf2538d4098cd699712cb7c15be43.setIcon(icon_ba270975b0de34f5703c25e1b5a4fc18);
+            
+    
+                marker_c644a0ca35662d8ce2126d3401cbaa30.setIcon(icon_1cae66be903bbd848edf32b8fe0f4301);
+            
+    
+                marker_da84b114a1e6a736633991fdc573dd31.setIcon(icon_f23cd86deb6bf43fadb5fa667b62dc4d);
+            
+    
+                marker_d7e0166dd6e1cefc7763e231d8281357.setIcon(icon_28bce8ff0b0f1ba5f467832edfbae6d9);
+            
+    
+                marker_d978ad3343dde2ad36edb853947ec420.setIcon(icon_d9dfc9f456158c099490e21edd1acc72);
+            
+    
+                marker_d1b67c0d4298abba1d072694754c715b.setIcon(icon_ae1e2b4cbaec091aeba94c8b8177d93d);
+            
+    
+                marker_6cccc083d428eac00e7c16ccd634cdd0.setIcon(icon_a8d0fd3710bea557b83a830c606eed0c);
+            
+    
+                marker_d5b4de9b02800441f795cfe31873dd43.setIcon(icon_6833708d3493dc0a8a92669b163439c7);
+            
+    
+                marker_5c2004f26c390757f65597019d5ff7a3.setIcon(icon_074f864c451fa7b504d49437e37afc37);
+            
+    
+                marker_7d28152d31b6bf63552ed63a287ed105.setIcon(icon_edbeaf9dc94138fed215a222cea69c26);
+            
+    
+                marker_0712c2fcbc26c83e7fe62e122bfcf6d8.setIcon(icon_8e7acae3dd4d274de8b229f37d21d6c9);
+            
+    
+                marker_f42de083f129b40ade5fc34e8a46cb63.setIcon(icon_6a55b4aae703f5cf6cfa8a36ce957558);
+            
+    
+                marker_c9e4cd924151bee74f8af2c3a28ad9de.setIcon(icon_99f863472803fce7e13b017ac44d4a28);
+            
+    
+                marker_327aceb536c7a1e9463507a738e17298.setIcon(icon_8c505ed519802190cb5b166f4381fba8);
+            
+    
+                marker_79a1332d57d31194b44d94bfa4b24453.setIcon(icon_a773f6390b572519adc704dbd6a18b14);
+            
+    
+                marker_5c3614c40c6342f2bffbfaaf60c04b98.setIcon(icon_693290f5333789dad2e556d19c204b26);
+            
+    
+                marker_837cbdac563d2ab13fd6d955afc28d9a.setIcon(icon_c1d3b12560a2853e55e3a7693412df33);
+            
+    
+                marker_5f6cf173f0bfc6a3e2397e868931a3d8.setIcon(icon_5ea1703a2889ac1dbb49403d1073c6e1);
+            
+    
+                marker_3ad5641440d3027cfb1ef71bcbec2051.setIcon(icon_a3b2c21bfdbd2a02603c4e8519f09c24);
+            
+    
+                marker_76714f5570ecd681041e5f2524bafd87.setIcon(icon_3fae94c79dbdd7c7b732462d08e80a10);
+            
+    
+                marker_43463d692d02d06146e7d5c2f2dc00f8.setIcon(icon_9b41404e35d9859ab73c57192fcb1bbe);
+            
+    
+                marker_62e8b2f0ee3cdca6b310999b7c764d18.setIcon(icon_31508ccebfe691399ceb81541e5192c4);
+            
+    
+                marker_d7b812dda26f870389f9d6d435ee59cd.setIcon(icon_ca7166c11d1761b31d19ac2892adfe63);
+            
+    
+                marker_c91f53f05bd2d18303c5d68cac773fda.setIcon(icon_fbac842a4e9896c13ca4392f13dbd1a2);
+            
+    
+                marker_7f3f574d331ae3817ee0bf3518e061f9.setIcon(icon_38e5c49561c323dbab01d578af1f6b0e);
+            
+    
+                marker_c9cac41077f981c6f1536c824f5b5840.setIcon(icon_7d5735df832dc34a02ae1aded37f801e);
+            
+    
+                marker_fb9a1444b72cdafe3767d35e63bb6139.setIcon(icon_4ddaa2ed42c84fefa2760f3cc4b10022);
+            
+    
+                marker_8347386aea8268aeafaf6ea9b623cb08.setIcon(icon_81fd4a83fb899b3bd131c9d7d53b24e6);
+            
+    
+                marker_e771a0745dbc1ce0a633130450a1e4c3.setIcon(icon_59eeecfa5a057b3af1c49fa868622894);
+            
+    
+                marker_0a5502b82c7b5c7e7f2de8e79197d897.setIcon(icon_db1c908a6ee57b1da7e4065f3db789fc);
+            
+    
+                marker_638eb38ce78595245a9348d68117f3fc.setIcon(icon_c69ca231e869d571cb1459cc5b78e53b);
+            
+    
+                marker_a9b02a7c7ac71cddf84ab83966d58b92.setIcon(icon_ec0cef047fbc0e1ac07cc0d86e52565c);
+            
+    
+                marker_d5bfb9a040d30df9c7320d98b4d4a0cb.setIcon(icon_f0a3da7f58d606f7169bedac3037e151);
+            
+    
+                marker_a60fe2451e181b43c89dcda33414d6ce.setIcon(icon_3bf9291e3d762cd8921ec444d76c7ef9);
+            
+    
+                marker_9413704c4a1c591989d9e1cd0d3e3455.setIcon(icon_2547fb57b457ba80262da2a82a4fede4);
+            
+    
+            var heat_map_d2cd3c6187035551fc2862bdf4284f87 = L.heatLayer(
+                [[19.710470153814992, -155.11464764136596], [19.744623894684, -155.09314847881598], [19.721295130309, -155.096209717494], [19.720137840938, -155.095978796061], [19.721136434928997, -155.09584245599896], [19.616795261212005, -155.94845045169296], [19.451805040916, -155.87344021344296], [20.074676210095, -155.46457307201996], [20.075574666296994, -155.463725493971], [19.386905138094995, -155.878580918479], [19.610784022757, -155.97675259756096], [19.789901594534, -155.094343905847], [19.713789052197, -155.078611827958], [19.202397069522, -155.477978752683], [19.686665297339996, -155.134565557882], [19.509276146772, -155.917417880109], [19.613167238242003, -155.034849743841], [19.611900187848, -155.032478754889], [19.622181053097, -155.03856242403296], [19.668105835871998, -155.981841774649], [19.668899224917002, -155.996949903666], [19.668062962436995, -155.983020354054], [19.728276291736, -155.044684482294], [19.525656900148, -154.92623620430297], [20.237656911013996, -155.817738862623], [20.237267864978996, -155.817784711634], [20.227276720211993, -155.778429245473], [19.504834157183996, -155.924586921895], [19.51157123759, -155.915061140393], [19.510155073138996, -155.915927829182], [19.554541692861996, -155.102355161264], [19.061215519467996, -155.57970563675298], [20.039269, -155.368277], [19.492441219972996, -154.943006213262], [19.512629214385, -154.905102985065], [19.695028844146997, -155.076080660837], [19.696203442148995, -155.074340493919], [19.695037812783998, -155.07762226046898], [19.683419866339992, -155.06818557859802], [19.945797030788995, -155.790594488285], [20.019165212297, -155.669903967376]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 75,
+  "blur": 25,
+}
+            );
+        
+    
+            heat_map_d2cd3c6187035551fc2862bdf4284f87.addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            tile_layer_a55271ed9076e15761322c8759c15ff2.addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+                marker_1375dc644ef69a836c7852c2b28317f9.setIcon(icon_9ab56946b6d8828e6002e6737c32aabe);
+            
+    
+                marker_8020a157244a8236e2929cda2d123e94.setIcon(icon_6254ce7def7b67b26a67f936357d412d);
+            
+    
+                marker_70e95eb360e1c23abc8477da1094ff72.setIcon(icon_999442329326d21ed02609de8ba5a1ae);
+            
+    
+                marker_a5e8b0e3d24b86420c65de8754e04e35.setIcon(icon_43efab9fd6b78a8702383bd98408b4b0);
+            
+    
+                marker_8af1f0c79b96ee33b16ef781bcd85064.setIcon(icon_dc928d7096223868d03c4700be6a802e);
+            
+    
+                marker_8e0786d17cca1cc5449ab07c4cc6232a.setIcon(icon_3037c9d4708af002829035a82ef8dd7d);
+            
+    
+                marker_31dcf2538d4098cd699712cb7c15be43.setIcon(icon_ba270975b0de34f5703c25e1b5a4fc18);
+            
+    
+                marker_c644a0ca35662d8ce2126d3401cbaa30.setIcon(icon_1cae66be903bbd848edf32b8fe0f4301);
+            
+    
+                marker_da84b114a1e6a736633991fdc573dd31.setIcon(icon_f23cd86deb6bf43fadb5fa667b62dc4d);
+            
+    
+                marker_d7e0166dd6e1cefc7763e231d8281357.setIcon(icon_28bce8ff0b0f1ba5f467832edfbae6d9);
+            
+    
+                marker_d978ad3343dde2ad36edb853947ec420.setIcon(icon_d9dfc9f456158c099490e21edd1acc72);
+            
+    
+                marker_d1b67c0d4298abba1d072694754c715b.setIcon(icon_ae1e2b4cbaec091aeba94c8b8177d93d);
+            
+    
+                marker_6cccc083d428eac00e7c16ccd634cdd0.setIcon(icon_a8d0fd3710bea557b83a830c606eed0c);
+            
+    
+                marker_d5b4de9b02800441f795cfe31873dd43.setIcon(icon_6833708d3493dc0a8a92669b163439c7);
+            
+    
+                marker_5c2004f26c390757f65597019d5ff7a3.setIcon(icon_074f864c451fa7b504d49437e37afc37);
+            
+    
+                marker_7d28152d31b6bf63552ed63a287ed105.setIcon(icon_edbeaf9dc94138fed215a222cea69c26);
+            
+    
+                marker_0712c2fcbc26c83e7fe62e122bfcf6d8.setIcon(icon_8e7acae3dd4d274de8b229f37d21d6c9);
+            
+    
+                marker_f42de083f129b40ade5fc34e8a46cb63.setIcon(icon_6a55b4aae703f5cf6cfa8a36ce957558);
+            
+    
+                marker_c9e4cd924151bee74f8af2c3a28ad9de.setIcon(icon_99f863472803fce7e13b017ac44d4a28);
+            
+    
+                marker_327aceb536c7a1e9463507a738e17298.setIcon(icon_8c505ed519802190cb5b166f4381fba8);
+            
+    
+                marker_79a1332d57d31194b44d94bfa4b24453.setIcon(icon_a773f6390b572519adc704dbd6a18b14);
+            
+    
+                marker_5c3614c40c6342f2bffbfaaf60c04b98.setIcon(icon_693290f5333789dad2e556d19c204b26);
+            
+    
+                marker_837cbdac563d2ab13fd6d955afc28d9a.setIcon(icon_c1d3b12560a2853e55e3a7693412df33);
+            
+    
+                marker_5f6cf173f0bfc6a3e2397e868931a3d8.setIcon(icon_5ea1703a2889ac1dbb49403d1073c6e1);
+            
+    
+                marker_3ad5641440d3027cfb1ef71bcbec2051.setIcon(icon_a3b2c21bfdbd2a02603c4e8519f09c24);
+            
+    
+                marker_76714f5570ecd681041e5f2524bafd87.setIcon(icon_3fae94c79dbdd7c7b732462d08e80a10);
+            
+    
+                marker_43463d692d02d06146e7d5c2f2dc00f8.setIcon(icon_9b41404e35d9859ab73c57192fcb1bbe);
+            
+    
+                marker_62e8b2f0ee3cdca6b310999b7c764d18.setIcon(icon_31508ccebfe691399ceb81541e5192c4);
+            
+    
+                marker_d7b812dda26f870389f9d6d435ee59cd.setIcon(icon_ca7166c11d1761b31d19ac2892adfe63);
+            
+    
+                marker_c91f53f05bd2d18303c5d68cac773fda.setIcon(icon_fbac842a4e9896c13ca4392f13dbd1a2);
+            
+    
+                marker_7f3f574d331ae3817ee0bf3518e061f9.setIcon(icon_38e5c49561c323dbab01d578af1f6b0e);
+            
+    
+                marker_c9cac41077f981c6f1536c824f5b5840.setIcon(icon_7d5735df832dc34a02ae1aded37f801e);
+            
+    
+                marker_fb9a1444b72cdafe3767d35e63bb6139.setIcon(icon_4ddaa2ed42c84fefa2760f3cc4b10022);
+            
+    
+                marker_8347386aea8268aeafaf6ea9b623cb08.setIcon(icon_81fd4a83fb899b3bd131c9d7d53b24e6);
+            
+    
+                marker_e771a0745dbc1ce0a633130450a1e4c3.setIcon(icon_59eeecfa5a057b3af1c49fa868622894);
+            
+    
+                marker_0a5502b82c7b5c7e7f2de8e79197d897.setIcon(icon_db1c908a6ee57b1da7e4065f3db789fc);
+            
+    
+                marker_638eb38ce78595245a9348d68117f3fc.setIcon(icon_c69ca231e869d571cb1459cc5b78e53b);
+            
+    
+                marker_a9b02a7c7ac71cddf84ab83966d58b92.setIcon(icon_ec0cef047fbc0e1ac07cc0d86e52565c);
+            
+    
+                marker_d5bfb9a040d30df9c7320d98b4d4a0cb.setIcon(icon_f0a3da7f58d606f7169bedac3037e151);
+            
+    
+                marker_a60fe2451e181b43c89dcda33414d6ce.setIcon(icon_3bf9291e3d762cd8921ec444d76c7ef9);
+            
+    
+                marker_9413704c4a1c591989d9e1cd0d3e3455.setIcon(icon_2547fb57b457ba80262da2a82a4fede4);
+            
+    
+            heat_map_d2cd3c6187035551fc2862bdf4284f87.addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var tile_layer_8ef82ef6c3c9221444427023262d51a9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8ef82ef6c3c9221444427023262d51a9.addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            var layer_control_2ec6cb8e8e9566272dd6a948b5176b53_layers = {
+                base_layers : {
+                    "Carto Positron" : tile_layer_a55271ed9076e15761322c8759c15ff2,
+                    "OpenStreetMap" : tile_layer_8ef82ef6c3c9221444427023262d51a9,
+                },
+                overlays :  {
+                    "School Heat Map" : heat_map_d2cd3c6187035551fc2862bdf4284f87,
+                },
+            };
+            let layer_control_2ec6cb8e8e9566272dd6a948b5176b53 = L.control.layers(
+                layer_control_2ec6cb8e8e9566272dd6a948b5176b53_layers.base_layers,
+                layer_control_2ec6cb8e8e9566272dd6a948b5176b53_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_44865dfc6866dffe1f74de539c9ff569);
+
+        
+    
+            tile_layer_a55271ed9076e15761322c8759c15ff2.addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+                marker_1375dc644ef69a836c7852c2b28317f9.setIcon(icon_9ab56946b6d8828e6002e6737c32aabe);
+            
+    
+                marker_8020a157244a8236e2929cda2d123e94.setIcon(icon_6254ce7def7b67b26a67f936357d412d);
+            
+    
+                marker_70e95eb360e1c23abc8477da1094ff72.setIcon(icon_999442329326d21ed02609de8ba5a1ae);
+            
+    
+                marker_a5e8b0e3d24b86420c65de8754e04e35.setIcon(icon_43efab9fd6b78a8702383bd98408b4b0);
+            
+    
+                marker_8af1f0c79b96ee33b16ef781bcd85064.setIcon(icon_dc928d7096223868d03c4700be6a802e);
+            
+    
+                marker_8e0786d17cca1cc5449ab07c4cc6232a.setIcon(icon_3037c9d4708af002829035a82ef8dd7d);
+            
+    
+                marker_31dcf2538d4098cd699712cb7c15be43.setIcon(icon_ba270975b0de34f5703c25e1b5a4fc18);
+            
+    
+                marker_c644a0ca35662d8ce2126d3401cbaa30.setIcon(icon_1cae66be903bbd848edf32b8fe0f4301);
+            
+    
+                marker_da84b114a1e6a736633991fdc573dd31.setIcon(icon_f23cd86deb6bf43fadb5fa667b62dc4d);
+            
+    
+                marker_d7e0166dd6e1cefc7763e231d8281357.setIcon(icon_28bce8ff0b0f1ba5f467832edfbae6d9);
+            
+    
+                marker_d978ad3343dde2ad36edb853947ec420.setIcon(icon_d9dfc9f456158c099490e21edd1acc72);
+            
+    
+                marker_d1b67c0d4298abba1d072694754c715b.setIcon(icon_ae1e2b4cbaec091aeba94c8b8177d93d);
+            
+    
+                marker_6cccc083d428eac00e7c16ccd634cdd0.setIcon(icon_a8d0fd3710bea557b83a830c606eed0c);
+            
+    
+                marker_d5b4de9b02800441f795cfe31873dd43.setIcon(icon_6833708d3493dc0a8a92669b163439c7);
+            
+    
+                marker_5c2004f26c390757f65597019d5ff7a3.setIcon(icon_074f864c451fa7b504d49437e37afc37);
+            
+    
+                marker_7d28152d31b6bf63552ed63a287ed105.setIcon(icon_edbeaf9dc94138fed215a222cea69c26);
+            
+    
+                marker_0712c2fcbc26c83e7fe62e122bfcf6d8.setIcon(icon_8e7acae3dd4d274de8b229f37d21d6c9);
+            
+    
+                marker_f42de083f129b40ade5fc34e8a46cb63.setIcon(icon_6a55b4aae703f5cf6cfa8a36ce957558);
+            
+    
+                marker_c9e4cd924151bee74f8af2c3a28ad9de.setIcon(icon_99f863472803fce7e13b017ac44d4a28);
+            
+    
+                marker_327aceb536c7a1e9463507a738e17298.setIcon(icon_8c505ed519802190cb5b166f4381fba8);
+            
+    
+                marker_79a1332d57d31194b44d94bfa4b24453.setIcon(icon_a773f6390b572519adc704dbd6a18b14);
+            
+    
+                marker_5c3614c40c6342f2bffbfaaf60c04b98.setIcon(icon_693290f5333789dad2e556d19c204b26);
+            
+    
+                marker_837cbdac563d2ab13fd6d955afc28d9a.setIcon(icon_c1d3b12560a2853e55e3a7693412df33);
+            
+    
+                marker_5f6cf173f0bfc6a3e2397e868931a3d8.setIcon(icon_5ea1703a2889ac1dbb49403d1073c6e1);
+            
+    
+                marker_3ad5641440d3027cfb1ef71bcbec2051.setIcon(icon_a3b2c21bfdbd2a02603c4e8519f09c24);
+            
+    
+                marker_76714f5570ecd681041e5f2524bafd87.setIcon(icon_3fae94c79dbdd7c7b732462d08e80a10);
+            
+    
+                marker_43463d692d02d06146e7d5c2f2dc00f8.setIcon(icon_9b41404e35d9859ab73c57192fcb1bbe);
+            
+    
+                marker_62e8b2f0ee3cdca6b310999b7c764d18.setIcon(icon_31508ccebfe691399ceb81541e5192c4);
+            
+    
+                marker_d7b812dda26f870389f9d6d435ee59cd.setIcon(icon_ca7166c11d1761b31d19ac2892adfe63);
+            
+    
+                marker_c91f53f05bd2d18303c5d68cac773fda.setIcon(icon_fbac842a4e9896c13ca4392f13dbd1a2);
+            
+    
+                marker_7f3f574d331ae3817ee0bf3518e061f9.setIcon(icon_38e5c49561c323dbab01d578af1f6b0e);
+            
+    
+                marker_c9cac41077f981c6f1536c824f5b5840.setIcon(icon_7d5735df832dc34a02ae1aded37f801e);
+            
+    
+                marker_fb9a1444b72cdafe3767d35e63bb6139.setIcon(icon_4ddaa2ed42c84fefa2760f3cc4b10022);
+            
+    
+                marker_8347386aea8268aeafaf6ea9b623cb08.setIcon(icon_81fd4a83fb899b3bd131c9d7d53b24e6);
+            
+    
+                marker_e771a0745dbc1ce0a633130450a1e4c3.setIcon(icon_59eeecfa5a057b3af1c49fa868622894);
+            
+    
+                marker_0a5502b82c7b5c7e7f2de8e79197d897.setIcon(icon_db1c908a6ee57b1da7e4065f3db789fc);
+            
+    
+                marker_638eb38ce78595245a9348d68117f3fc.setIcon(icon_c69ca231e869d571cb1459cc5b78e53b);
+            
+    
+                marker_a9b02a7c7ac71cddf84ab83966d58b92.setIcon(icon_ec0cef047fbc0e1ac07cc0d86e52565c);
+            
+    
+                marker_d5bfb9a040d30df9c7320d98b4d4a0cb.setIcon(icon_f0a3da7f58d606f7169bedac3037e151);
+            
+    
+                marker_a60fe2451e181b43c89dcda33414d6ce.setIcon(icon_3bf9291e3d762cd8921ec444d76c7ef9);
+            
+    
+                marker_9413704c4a1c591989d9e1cd0d3e3455.setIcon(icon_2547fb57b457ba80262da2a82a4fede4);
+            
+    
+            heat_map_d2cd3c6187035551fc2862bdf4284f87.addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+    
+            tile_layer_8ef82ef6c3c9221444427023262d51a9.addTo(map_44865dfc6866dffe1f74de539c9ff569);
+        
+</script>
+</html>
