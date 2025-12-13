@@ -8,4 +8,4 @@ The interactive map shows:
 
 ## Interactive Map
 
-<iframe src="school_map.html" height="550" width="100%"></iframe>
+<iframe src="school_lavahazard.html" height="550" width="100%"></iframe>
