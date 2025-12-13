@@ -16,4 +16,4 @@ The interactive map shows:
 
 ## Map 2
 
-<iframe src="map2.png" height="550" width="100%"></iframe>
+<iframe src="map2.png" height="800" width="100%"></iframe>
