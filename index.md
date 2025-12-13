@@ -12,7 +12,7 @@ The interactive map shows:
 
 ## Map 1
 
-<iframe src="map1.png" height="550" width="100%"></iframe>
+<iframe src="map1.png" height="1000" width="100%"></iframe>
 
 ## Map 2
 
