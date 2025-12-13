@@ -9,3 +9,11 @@ The interactive map shows:
 ## Interactive Map
 
 <iframe src="school_lavahazard.html" height="550" width="100%"></iframe>
+
+## Map 1
+
+<iframe src="map1.png" height="550" width="100%"></iframe>
+
+## Map 2
+
+<iframe src="map2.png" height="550" width="100%"></iframe>
