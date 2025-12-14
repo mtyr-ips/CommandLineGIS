@@ -1,7 +1,7 @@
 # Final Project - Command Line GIS Fall 2025
 # Mutiara Indah Puspita Sari 
 
-# Lava Hazard Zone & School Accessibility
+## Lava Hazard Zone & School Accessibility
 
 The interactive map shows:
 - Lava hazard zones (1–9)
