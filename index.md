@@ -32,7 +32,7 @@ I extensively search around the datasets that Hawaii County (the big island) hav
 - Who prepared them? How recently were they updated?
   - ACS 5 years for population density (people/km^2) at the block group level, that shows unreliable data with CV ≥ 40.
   - Lava hazard zones (1-9) from USGS. I treat zone 1-2 as the most important piece in this research. https://geoportal.hawaii.gov/datasets/volcano-lava-flow-hazard-zones update: June 1, 2024 at 11:19:47 AM GMT+7
-  - USA Volcano.
+  - USA Volcano. https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G02135 
   - Schools, geocoded from Hawaii Dept of Edu's excel sheet. https://hawaiipublicschools.org/enrolling-in-school/find-your-school/. Possibly data set is same since September, 2021, this info from the school district area shp in hawaii
   - Network from OSM. Tracked the 15 minutes travel time from lava hazard zones 1-2 as suggested by class. I believe this is an open source with people updating it, so probably updated daily.
   
