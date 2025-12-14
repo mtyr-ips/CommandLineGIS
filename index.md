@@ -19,7 +19,7 @@ The interactive map shows:
 
 ## Map 2: Population Density with Lava Hazard Zones 1-2
 
-<iframe src="map2.png" height="950" width="100%"></iframe>
+<iframe src="map2.png" height="970" width="100%"></iframe>
 
 ## Description
 
