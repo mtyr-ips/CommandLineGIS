@@ -15,8 +15,6 @@
 
 ## Description
 
-A short description of the datasets you used to create your maps, that answers the following questions (and anything else you want to say about your topic).
-
 This project is a thematical research regarding volcanoes. I use Hawaii County only since it has one of the most active volcanoes in USA and I found that they have an interesting map of lava hazard zones. Using the required data & methods needed (Census, spatial join/geoprocessing), I make two static maps: 1) 15-minute School Access from Lava Hazard Zones 1-2 and 2) Population Density with Lava Hazard Zones 1-2. For the interactive map, i do an interactive map of Lava Hazard Zone & School Accessibility with 2 basemaps, tooltips of lava hazard zones that have information of layer when hovered, and popups that redirect to the school sites.
 
 - Where did you find them?
@@ -31,11 +29,12 @@ I extensively search around the datasets that Hawaii County (the big island) hav
   
 - What format were they originally in? Did you have to do anything to make them mappable (table join, spatial join, geocoding, aggregation, etc.)?
   1. Map 1: 15-minute School Access from Lava Hazard Zones 1-2
-     - geoprocessing = clip road network of hawaii county
-     - spatial overlay = school inside 15 mins of zone 1-2
+     - geoprocessing = clip road network to hawaii county, reprojection
+     - network analysis/spatial overlay = school inside 15 mins of zone 1-2
      - geocoded schools from excel address
   2. Map 2: Population Density with Lava Hazard Zones 1-2
     - calculate popden & search unreliable data with high CV more than 40
+    - do small multiples of denser block groups, suggested by a peer in class
     - geoprocessing = reprojection
   3. Interactive Map: Lava Hazard Zone & School Accessibility
     - layer control, basemaps, popups
